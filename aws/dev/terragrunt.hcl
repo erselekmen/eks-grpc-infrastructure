@@ -5,7 +5,6 @@ generate "provider" {
   contents  = <<EOF
   provider "aws" {
     region  = "eu-central-1"
-    profile = "cus-test"
   }
   EOF
 }
@@ -18,7 +17,6 @@ remote_state {
   }
   config = {
     bucket  = "eks-grpc-infrastructure"
-  #  profile = "cus-test"
     key     = "${path_relative_to_include()}/terraform.tfstate"
     region  = "eu-central-1"
     encrypt = true
