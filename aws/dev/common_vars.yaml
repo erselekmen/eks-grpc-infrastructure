@@ -1,0 +1,7 @@
+environment: dev
+namespace: grpc-eks
+
+tags:
+  Namespace: grpc-eks
+  Environment: dev
+  Terraform: true
