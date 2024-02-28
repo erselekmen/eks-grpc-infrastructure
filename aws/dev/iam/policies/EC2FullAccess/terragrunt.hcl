@@ -9,7 +9,7 @@ locals {
 }
 
 terraform {
-  source = "../../../../..//modules/terraform-aws-iam/modules/EC2FullAccess/"
+  source = "../../../../..//modules/terraform-aws-iam/modules/iam-policy/"
 }
 
 inputs = {
